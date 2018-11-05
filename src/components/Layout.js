@@ -3,10 +3,18 @@ import Helmet from 'react-helmet'
 
 import Navbar from '../components/Navbar'
 import './all.sass'
+import favicon from "../../static/img/icons/favicon.ico";
 
 const TemplateWrapper = ({children}) => (
   <div>
-    <Helmet title="Home | Josh's Portfolio"/>
+    <Helmet
+      title="Home | Josh's Portfolio"
+      link={[{
+        rel: 'shortcut icon',
+        type: 'image/png',
+        href: `${favicon}`
+      }
+    ]}/>
     <Navbar/>
     <div>{children}</div>
   </div>
