@@ -1,15 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
+import {v4} from 'uuid'
 
-const Testimonials = ({ testimonials }) => (
+const Testimonials = ({testimonials}) => (
   <div>
     {testimonials.map(testimonial => (
       <article key={v4()} className="message">
         <div className="message-body">
           {testimonial.quote}
-          <br />
-          <cite> – {testimonial.author}</cite>
+          <br/>
+          <cite>
+            – {testimonial.author}</cite>
         </div>
       </article>
     ))}
@@ -17,12 +18,7 @@ const Testimonials = ({ testimonials }) => (
 )
 
 Testimonials.propTypes = {
-  testimonials: PropTypes.arrayOf(
-    PropTypes.shape({
-      quote: PropTypes.string,
-      author: PropTypes.string,
-    })
-  ),
+  testimonials: PropTypes.arrayOf(PropTypes.shape({quote: PropTypes.string, author: PropTypes.string}))
 }
 
 export default Testimonials

@@ -1,10 +1,10 @@
 const _ = require('lodash')
 const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const {createFilePath} = require('gatsby-source-filesystem')
+const {fmImagesToRelative} = require('gatsby-remark-relative-images')
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+exports.createPages = ({actions, graphql}) => {
+  const {createPage} = actions
 
   return graphql(`
     {
@@ -25,7 +25,9 @@ exports.createPages = ({ actions, graphql }) => {
     }
   `).then(result => {
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
+      result
+        .errors
+        .forEach(e => console.error(e.toString()))
       return Promise.reject(result.errors)
     }
 
@@ -36,13 +38,11 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
+        component: path.resolve(`src/templates/${String(edge.node.frontmatter.templateKey)}.js`),
         // additional data can be passed via context
         context: {
-          id,
-        },
+          id
+        }
       })
     })
 
@@ -65,23 +65,19 @@ exports.createPages = ({ actions, graphql }) => {
         path: tagPath,
         component: path.resolve(`src/templates/tags.js`),
         context: {
-          tag,
-        },
+          tag
+        }
       })
     })
   })
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+exports.onCreateNode = ({node, actions, getNode}) => {
+  const {createNodeField} = actions
   fmImagesToRelative(node) // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
+    const value = createFilePath({node, getNode})
+    createNodeField({name: `slug`, node, value})
   }
 }
