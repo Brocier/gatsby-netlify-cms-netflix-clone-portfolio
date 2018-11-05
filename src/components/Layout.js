@@ -8,7 +8,7 @@ import favicon from "../../static/img/icons/favicon.ico";
 const TemplateWrapper = ({children}) => (
   <div>
     <Helmet
-      title="Home | Josh's Portfolio"
+      title="Projects | Josh's Portfolio"
       link={[{
         rel: 'shortcut icon',
         type: 'image/png',
