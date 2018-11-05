@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: project-post
 title: Test Edit One
 date: 2016-12-17T15:04:10.000Z
 description: 'Wow, what a description.'
