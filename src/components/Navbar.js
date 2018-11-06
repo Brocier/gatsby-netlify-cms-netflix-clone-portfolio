@@ -14,7 +14,7 @@ const Navbar = () => (
               alt="JSchoenfeld Logo"
               style={{
               width: '100%',
-              height: '100%'
+              maxHeight: '100%'
             }}/>
           </figure>
         </Link>
