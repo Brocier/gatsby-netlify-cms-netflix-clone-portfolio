@@ -1,7 +1,7 @@
 ---
 templateKey: project-post
 title: All the Pets
-thumbnail: ''
+thumbnail: 'https://i.imgur.com/enJuE5g.jpg'
 date: 2017-11-05T17:56:00.000Z
 description: Second project
 tags:
