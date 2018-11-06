@@ -11,3 +11,5 @@ tags:
   - Late nights
 ---
 This was my second project during WDI.
+
+![JS](/img/js-512.png)
