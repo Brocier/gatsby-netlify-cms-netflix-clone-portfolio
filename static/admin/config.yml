@@ -38,4 +38,9 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          
+      - file: "src/pages/resume.js"
+        label: "Resume"
+        name: "resume"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resume"}
+          - {label: "Resume File", name: "resume_file", widget: "file", hint: "Must be titled 'Joshua Schoenfeld Resume.pdf' "}
