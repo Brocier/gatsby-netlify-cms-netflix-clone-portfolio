@@ -1,6 +1,7 @@
 ---
 templateKey: project-post
 title: Memory Game v1
+thumbnail: 'https://i.imgur.com/enJuE5g.jpg'
 date: 2018-11-05T13:45:19.108Z
 description: |-
   The first project I ever coded.
