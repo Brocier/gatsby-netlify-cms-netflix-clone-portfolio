@@ -8,4 +8,4 @@
 [[redirects]]
   from = "http://joshuaschoenfeld.netlify.com/*" 
   to = "http://www.joshuaschoenfeld.com/:splat" 
-  status= "301!"
+  status= 301
