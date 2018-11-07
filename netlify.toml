@@ -6,6 +6,6 @@
   YARN_FLAGS = "--no-ignore-optional"
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
-  from = "http://joshuaschoenfeld.netlify.com/*" 
-  to = "http://www.joshuaschoenfeld.com/:splat" 
+  from = "joshuaschoenfeld.netlify.com/*" 
+  to = "www.joshuaschoenfeld.com/:splat" 
   status= 301
