@@ -4,3 +4,8 @@
 [build.environment]
   YARN_VERSION = "1.3.2"
   YARN_FLAGS = "--no-ignore-optional"
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "http://joshuaschoenfeld.netlify.com/*" 
+  to = "http://www.joshuaschoenfeld.com/:splat" 
+  status= "301!"
