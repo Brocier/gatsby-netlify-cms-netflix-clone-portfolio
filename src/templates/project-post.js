@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import {kebabCase} from 'lodash'
-import Helmet from 'react-helmet'
-import {graphql, Link} from 'gatsby'
-import Layout from '../components/Layout'
-import Content, {HTMLContent} from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
+import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
 
 export const ProjectPostTemplate = ({
   content,
@@ -14,11 +14,11 @@ export const ProjectPostTemplate = ({
   title,
   helmet
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
 
   return (
     <section className="section">
-      {helmet || ''}
+      {helmet || ""}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -26,28 +26,29 @@ export const ProjectPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
-            <PostContent content={content}/> {tags && tags.length
-              ? (
-                <div style={{
+            <PostContent content={content} />{" "}
+            {tags && tags.length ? (
+              <div
+                style={{
                   marginTop: `4rem`
-                }}>
-                  <h4>Tags</h4>
-                  <ul className="taglist">
-                    {tags.map(tag => (
-                      <li key={tag + `tag`}>
-                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )
-              : null}
+                }}
+              >
+                <h4>Tags</h4>
+                <ul className="taglist">
+                  {tags.map(tag => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 ProjectPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
@@ -55,10 +56,10 @@ ProjectPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet)
-}
+};
 
-const ProjectPost = ({data}) => {
-  const {markdownRemark: post} = data
+const ProjectPost = ({ data }) => {
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -66,22 +67,21 @@ const ProjectPost = ({data}) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        helmet={< Helmet title = {
-        `${post.frontmatter.title} | Project`
-      } />}
+        helmet={<Helmet title={`${post.frontmatter.title} | Project`} />}
         tags={post.frontmatter.tags}
-        title={post.frontmatter.title}/>
+        title={post.frontmatter.title}
+      />
     </Layout>
-  )
-}
+  );
+};
 
 ProjectPost.propTypes = {
-  data: PropTypes.shape({markdownRemark: PropTypes.object})
-}
+  data: PropTypes.shape({ markdownRemark: PropTypes.object })
+};
 
-export default ProjectPost
+export default ProjectPost;
 
-export const pageQuery = graphql `
+export const pageQuery = graphql`
   query ProjectPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
@@ -94,4 +94,4 @@ export const pageQuery = graphql `
       }
     }
   }
-`
+`;
