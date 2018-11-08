@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import resume from '../../static/img/Joshua Schoenfeld Resume.pdf'
+import Layout from '../../components/Layout'
+import resume from '../../../static/img/Joshua Schoenfeld Resume.pdf'
 
 const Resume = () => (
   <Layout>
