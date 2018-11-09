@@ -24,7 +24,7 @@ class index extends Component {
             <li />
             <li>
               <a href="https://github.com/netlify-templates/gatsby-starter-netlify-cms">
-                Gatsby Starter Netlify CMS
+                Gatsby + Netlify CMS Starter
               </a>
             </li>
             <li>
