@@ -1,5 +1,5 @@
 import React from "react";
-import Proptypes from "prop-types";
+// import Proptypes from "prop-types";
 
 import "./SearchInput.scss";
 import { withRouter } from "react-router-dom";
