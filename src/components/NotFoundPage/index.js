@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Nav, Footer } from "/src/components/Global";
+import { Nav, Footer } from "../Global";
 import Content from "./Content";
 
 const NotFoundPage = ({

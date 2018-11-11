@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 
 import { Poster, Descriptions } from "./presentations";
-import { movieAction } from "/src/actions";
+import { movieAction } from "../../actions";
 
 class ViewMovie extends React.Component {
   componentDidMount() {

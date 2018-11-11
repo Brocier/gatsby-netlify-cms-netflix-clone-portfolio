@@ -1,8 +1,9 @@
+/* eslint-disable */
 import React from "react";
 import Proptypes from "prop-types";
 import { connect } from "react-redux";
 import { MovieList, ListHeader } from "./presentations";
-import { movieListAction, movieAction } from "/src/actions";
+import { movieListAction, movieAction } from "../../actions";
 
 class HomeList extends React.Component {
   componentDidMount() {
