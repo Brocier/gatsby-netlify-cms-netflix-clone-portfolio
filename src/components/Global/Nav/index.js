@@ -9,7 +9,7 @@ const Nav = () => (
     <nav className="navbar">
       <ul>
         <li>
-          <NavLink to="/" className="logo navItem">
+          <NavLink to="/netflix-clone" className="logo navItem">
             <img
               style={{
                 width: 110,
