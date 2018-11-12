@@ -6,7 +6,7 @@ import "./all.sass";
 import favicon from "../../static/img/icons/favicon.ico";
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <>
     <Helmet
       title="Projects | Josh's Portfolio"
       link={[
@@ -18,8 +18,8 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Navbar />
-    <div>{children}</div>
-  </div>
+    <>{children}</>
+  </>
 );
 
 export default TemplateWrapper;

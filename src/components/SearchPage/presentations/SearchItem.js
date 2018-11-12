@@ -76,8 +76,8 @@ class SearchItem extends React.Component {
               <div className="search-playbtn-container">
                 <button className="playBtn ">▶</button>
               </div>
-              <div>{this.renderTitle(movie.title)}</div>
-              <div>{this.renderDesc(movie.overview)}</div>
+              <>{this.renderTitle(movie.title)}</>
+              <>{this.renderDesc(movie.overview)}</>
             </div>
           </div>
         </Link>

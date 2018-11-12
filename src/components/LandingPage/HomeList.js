@@ -22,7 +22,7 @@ class HomeList extends React.Component {
   render() {
     const { nowPlaying, upcoming, topRated, popular } = this.props;
     return (
-      <div>
+      <>
         <ListHeader header="Up Coming" />
         <MovieList movieList={upcoming} />
         <ListHeader header="Popular" />
@@ -31,7 +31,7 @@ class HomeList extends React.Component {
         <MovieList movieList={topRated} />
         <ListHeader header="Now Playing" />
         <MovieList movieList={nowPlaying} />
-      </div>
+      </>
     );
   }
 }

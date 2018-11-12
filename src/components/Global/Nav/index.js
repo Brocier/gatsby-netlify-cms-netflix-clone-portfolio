@@ -5,7 +5,7 @@ import SearchInput from "./SearchInput";
 import netflixLogo from "../../../assets/img/Netflix-logo.png";
 
 const Nav = () => (
-  <div>
+  <>
     <nav className="navbar">
       <ul>
         <li>
@@ -26,7 +26,7 @@ const Nav = () => (
         <SearchInput />
       </ul>
     </nav>
-  </div>
+  </>
 );
 
 export default Nav;

@@ -9,13 +9,13 @@ const NotFoundPage = ({
     params: { unfoundLocation }
   }
 }) => (
-  <React.Fragment>
+  <>
     <Nav />
     <main className="not-found-page">
       <Content unfoundLocation={unfoundLocation} />
     </main>
     <Footer />
-  </React.Fragment>
+  </>
 );
 
 NotFoundPage.propTypes = {

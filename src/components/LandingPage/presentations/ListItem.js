@@ -67,8 +67,8 @@ class ListItem extends React.Component {
             <div className="playbtn-container">
               <button className="playBtn ">▶</button>
             </div>
-            <div>{this.renderTitle(movie.title)}</div>
-            <div>{this.renderDesc(movie.overview)}</div>
+            <>{this.renderTitle(movie.title)}</>
+            <>{this.renderDesc(movie.overview)}</>
           </div>
         </div>
       </Link>
