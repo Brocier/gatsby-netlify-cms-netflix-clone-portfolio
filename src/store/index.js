@@ -5,13 +5,10 @@ import { createLogger } from "redux-logger";
 import rootReducer from "../reducers";
 
 export default function configureStore() {
-  // Middleware for logging redux action to console
   const logger = createLogger({ collapsed: true });
-
   const store = createStore(
     rootReducer,
     composeWithDevTools(applyMiddleware(...[thunk, logger]))
   );
-
   return store;
 }
