@@ -45,7 +45,11 @@ const Navbar = () => (
           rel="noopener noreferrer"
         >
           <span className="icon">
-            <img src={github} alt="Github" />
+            <img
+              src={github}
+              alt="Github"
+              style={{ maxHeight: "48px", maxWidth: "48px" }}
+            />
           </span>
         </a>
       </div>
