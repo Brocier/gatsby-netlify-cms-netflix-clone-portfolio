@@ -2,7 +2,6 @@ import React from "react";
 // import Proptypes from "prop-types";
 
 import "./SearchInput.scss";
-import { withRouter } from "react-router-dom";
 
 class SearchInput extends React.Component {
   state = {
@@ -46,4 +45,4 @@ class SearchInput extends React.Component {
   }
 }
 
-export default withRouter(SearchInput);
+export default SearchInput;

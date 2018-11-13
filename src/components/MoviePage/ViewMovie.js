@@ -1,7 +1,6 @@
 import React from "react";
 import Proptypes from "prop-types";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
 
 import { Poster, Descriptions } from "./presentations";
 import { movieAction } from "../../actions";
@@ -60,9 +59,7 @@ const dispatchToProps = dispatch => ({
   clearTheMovie: () => dispatch(movieAction.clearTheMovie())
 });
 
-export default withRouter(
-  connect(
-    stateToProps,
-    dispatchToProps
-  )(ViewMovie)
-);
+export default connect(
+  stateToProps,
+  dispatchToProps
+)(ViewMovie);

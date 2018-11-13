@@ -1,7 +1,6 @@
 import React from "react";
 import Proptypes from "prop-types";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
 
 import { SearchItem } from "./presentations";
 import { movieAction } from "../../actions";
@@ -75,9 +74,7 @@ const dispatchToProps = dispatch => ({
   clearSearchResult: () => dispatch(movieAction.clearSearchResult())
 });
 
-export default withRouter(
-  connect(
-    stateToProps,
-    dispatchToProps
-  )(ViewSearch)
-);
+export default connect(
+  stateToProps,
+  dispatchToProps
+)(ViewSearch);
