@@ -1,6 +1,6 @@
 import React from "react";
 import Proptypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 
 class ListItem extends React.Component {
   constructor(props) {

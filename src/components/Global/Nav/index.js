@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "gatsby";
 
 import SearchInput from "./SearchInput";
 import netflixLogo from "../../../assets/img/Netflix-logo.png";
@@ -9,7 +9,7 @@ const Nav = () => (
     <nav className="navbar">
       <ul>
         <li>
-          <NavLink to="/netflix-clone" className="logo navItem">
+          <Link to="/netflixclone" className="logo navItem">
             <img
               style={{
                 width: 110,
@@ -18,7 +18,7 @@ const Nav = () => (
               src={netflixLogo}
               alt="img"
             />
-          </NavLink>
+          </Link>
         </li>
       </ul>
 
