@@ -10,13 +10,9 @@
 // const Router = () => (
 //   <BrowserRouter>
 //     <Switch>
-//       <Route path="/netflix-clone" exact component={LandingPage} />
-//       <Route
-//         path="/netflix-clone/search/:searchInput"
-//         exact
-//         component={SearchPage}
-//       />
-//       <Route path="/netflix-clone/movie/:movieId" exact component={MoviePage} />
+//       <Route path="/nc" exact component={LandingPage} />
+//       <Route path="/nc/search/:searchInput" exact component={SearchPage} />
+//       <Route path="/nc/movie/:movieId" exact component={MoviePage} />
 //       <Route exact path="/:unfoundLocation" component={NotFoundPage} />
 //     </Switch>
 //   </BrowserRouter>
