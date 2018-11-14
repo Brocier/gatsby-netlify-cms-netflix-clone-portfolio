@@ -74,10 +74,10 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "start": "npm run develop --scripts-prepend-node-path",
-    "clean": "rimraf .cache public --scripts-prepend-node-path",
-    "build": "npm run clean && gatsby build --scripts-prepend-node-path",
-    "develop": "npm run clean && gatsby develop --scripts-prepend-node-path",
+    "start": "npm run develop",
+    "clean": "rimraf .cache public",
+    "build": "npm run clean && gatsby build",
+    "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
