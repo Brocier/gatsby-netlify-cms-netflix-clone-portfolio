@@ -1,5 +1,9 @@
 import React from "react";
-import carousel from "../../../assets/js/bootstrap/carousel.js";
+import "../../../assets/js/bootstrap/carousel.js";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+library.add(faPlus);
 
 const Slider = () => (
   <div className="slider">
@@ -50,7 +54,7 @@ const Slider = () => (
               </p>
               <p className="castGenreList">volutpat tortor, massa</p>
               <button type="button" className="addListBtn">
-                +
+                <FontAwesomeIcon icon="plus" />
               </button>
               MY LIST
             </div>
@@ -88,7 +92,7 @@ const Slider = () => (
               </p>
               <p className="castGenreList">tortor, eleifend</p>
               <button type="button" className="addListBtn">
-                +
+                <FontAwesomeIcon icon="plus" />
               </button>
               MY LIST
             </div>
@@ -126,7 +130,7 @@ const Slider = () => (
               </p>
               <p className="castGenreList">Phasellus, volutpat</p>
               <button type="button" className="addListBtn">
-                +
+                <FontAwesomeIcon icon="plus" />
               </button>
               MY LIST
             </div>
