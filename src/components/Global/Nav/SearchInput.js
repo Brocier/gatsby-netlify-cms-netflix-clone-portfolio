@@ -1,8 +1,12 @@
 import React from "react";
-// import Proptypes from "prop-types";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import "./SearchInput.scss";
 
+library.add(faSearch);
 class SearchInput extends React.Component {
   state = {
     input: "",
@@ -37,8 +41,8 @@ class SearchInput extends React.Component {
             if (e.keyCode === ENTER_KEY) this.handleSubmit();
           }}
         />
-        <span className="navItem search-icon ">
-          <i className="fas fa-search" onClick={this.handleSubmit} />
+        <span className=" search-icon">
+          <FontAwesomeIcon icon="search" />
         </span>
       </li>
     );
