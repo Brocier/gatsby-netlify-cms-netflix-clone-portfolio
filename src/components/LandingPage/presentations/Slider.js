@@ -1,4 +1,5 @@
 import React from "react";
+import carousel from "../../../assets/js/bootstrap/carousel.js";
 
 const Slider = () => (
   <div className="slider">
