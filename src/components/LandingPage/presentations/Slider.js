@@ -1,162 +1,134 @@
-import React from "react";
-import "../../../assets/js/bootstrap/carousel.js";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
-library.add(faPlus);
+import React, { Component } from "react";
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators
+} from "reactstrap";
+import CarouselContent from "./CarouselContent";
 
-const Slider = () => (
-  <div className="slider">
-    <div
-      id="carouselExampleIndicators"
-      className="carousel slide"
-      data-ride="carousel"
-    >
-      <ol className="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          className="active"
-        />
-        <li data-target="#carouselExampleIndicators" data-slide-to="1" />
-        <li data-target="#carouselExampleIndicators" data-slide-to="2" />
-      </ol>
-      <div className="carousel-inner" role="listbox">
-        <div className="carousel-item active">
-          <img
-            className="d-block img-fluid"
-            src="https://s-media-cache-ak0.pinimg.com/originals/26/00/d5/2600d5fda64fb9356b117219ca2bfce9.jpg"
-            alt="First slide"
+const items = [
+  {
+    src:
+      "https://s-media-cache-ak0.pinimg.com/originals/26/00/d5/2600d5fda64fb9356b117219ca2bfce9.jpg",
+    altText: "Stranger Things Picture",
+    title: `Stranger Things`,
+    subtitle: "97% Match 2016 TV-14 season 1",
+    description: `
+    Phasellus a nulla vitae augue convallis efficitur.
+    Nam gravida viverra velit venenatis elementum.
+    Phasellus egestas volutpa`,
+    castList: `Phasellus egestas, volutpat tortor, eget eleifend, massa`,
+    genreList: `volutpat, tortor, massa`
+  },
+  {
+    src:
+      "https://resi.ze-robot.com/dl/wa/wallpaper-i-made-from-the-new-blade-runner-2049-reveal-trailer-multiple-albums-1920%C3%97811.jpg",
+    altText: "Blade Runner 2047 Picture",
+    title: "Blade Runner 2047",
+    subtitle: "98% Match 2016 TV-14 season 1",
+    description: `
+    Phasellus a nulla vitae augue convallis efficitur.
+    Nam gravida viverra velit venenatis elementum.
+    Phasellus egestas volutpa`,
+    castList: `Phasellus egestas, volutpat tortor, eget eleifend, massa`,
+    genreList: `volutpat, tortor, massa`
+  },
+  {
+    src: "http://www.studiorjm.net/wp-content/uploads/2013/10/Gravity.jpg",
+    altText: "Gravity Picture",
+    title: "Gravity",
+    subtitle: "99% Match 2016 TV-14 season 1",
+    description: `
+    Phasellus a nulla vitae augue convallis efficitur.
+    Nam gravida viverra velit venenatis elementum.
+    Phasellus egestas volutpa`,
+    castList: `Phasellus egestas, volutpat tortor, eget eleifend, massa`,
+    genreList: `volutpat, tortor, massa`
+  }
+];
+
+class Slider extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { activeIndex: 0 };
+    this.next = this.next.bind(this);
+    this.previous = this.previous.bind(this);
+    this.goToIndex = this.goToIndex.bind(this);
+    this.onExiting = this.onExiting.bind(this);
+    this.onExited = this.onExited.bind(this);
+  }
+
+  onExiting() {
+    this.animating = true;
+  }
+  onExited() {
+    this.animating = false;
+  }
+  next() {
+    if (this.animating) return;
+    const nextIndex =
+      this.state.activeIndex === items.length - 1
+        ? 0
+        : this.state.activeIndex + 1;
+    this.setState({ activeIndex: nextIndex });
+  }
+  previous() {
+    if (this.animating) return;
+    const nextIndex =
+      this.state.activeIndex === 0
+        ? items.length - 1
+        : this.state.activeIndex - 1;
+    this.setState({ activeIndex: nextIndex });
+  }
+  goToIndex(newIndex) {
+    if (this.animating) return;
+    this.setState({ activeIndex: newIndex });
+  }
+
+  render() {
+    const { activeIndex } = this.state;
+
+    const slides = items.map(item => {
+      return (
+        <CarouselItem
+          onExiting={this.onExiting}
+          onExited={this.onExited}
+          key={item.src}
+        >
+          <img src={item.src} alt={item.altText} />
+          <CarouselContent item={{ ...item }} />
+        </CarouselItem>
+      );
+    });
+
+    return (
+      <div className="slider">
+        <Carousel
+          activeIndex={activeIndex}
+          next={this.next}
+          previous={this.previous}
+        >
+          <CarouselIndicators
+            items={items}
+            activeIndex={activeIndex}
+            onClickHandler={this.goToIndex}
           />
-          <div className="carousel-caption d-none d-md-block">
-            <div className="text">
-              <h3 className="title">Stranger Things</h3>
-              <p className="sub-title">
-                <b>97% Match 2016 TV-14 season 1</b>
-                <br />
-                <br />
-                Phasellus a nulla vitae augue convallis efficitur.
-                <br />
-                Nam gravida viverra velit venenatis elementum.
-                <br />
-                Phasellus egestas volutpa
-              </p>
-              <p className="sub-title">
-                Cast:
-                <br />
-              </p>
-              <p className="castGenreList">
-                Phasellus egestas, volutpat tortor, eget eleifend, massa
-              </p>
-              <p className="sub-title">
-                Genres:
-                <br />
-              </p>
-              <p className="castGenreList">volutpat tortor, massa</p>
-              <button type="button" className="addListBtn">
-                <FontAwesomeIcon icon="plus" />
-              </button>
-              MY LIST
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <img
-            className="d-block img-fluid"
-            src="https://resi.ze-robot.com/dl/wa/wallpaper-i-made-from-the-new-blade-runner-2049-reveal-trailer-multiple-albums-1920%C3%97811.jpg"
-            alt="Second slide"
+          {slides}
+          <CarouselControl
+            direction="prev"
+            directionText="Previous"
+            onClickHandler={this.previous}
           />
-          <div className="carousel-caption d-none d-md-block">
-            <div className="text">
-              <h3 className="title">Blade Runner 2047</h3>
-              <p className="sub-title">
-                <b>97% Match 2016 TV-14 season 1</b>
-                <br />
-                <br />
-                Phasellus a nulla vitae augue convallis efficitur.
-                <br />
-                Nam gravida viverra velit venenatis elementum.
-                <br />
-                Phasellus egestas volutpa
-              </p>
-              <p className="sub-title">
-                Cast:
-                <br />
-              </p>
-              <p className="castGenreList">
-                Phasellus egestas, volutpat tortor, eget eleifend, massa
-              </p>
-              <p className="sub-title">
-                Genres:
-                <br />
-              </p>
-              <p className="castGenreList">tortor, eleifend</p>
-              <button type="button" className="addListBtn">
-                <FontAwesomeIcon icon="plus" />
-              </button>
-              MY LIST
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <img
-            className="d-block img-fluid"
-            src="http://www.studiorjm.net/wp-content/uploads/2013/10/Gravity.jpg"
-            alt="Third slide"
+          <CarouselControl
+            direction="next"
+            directionText="Next"
+            onClickHandler={this.next}
           />
-          <div className="carousel-caption d-none d-md-block">
-            <div className="text">
-              <h3 className="title">Gravity</h3>
-              <p className="sub-title">
-                <b>97% Match 2016 TV-14 season 1</b>
-                <br />
-                <br />
-                Phasellus a nulla vitae augue convallis efficitur.
-                <br />
-                Nam gravida viverra velit venenatis elementum.
-                <br />
-                Phasellus egestas volutpa
-              </p>
-              <p className="sub-title">
-                Cast:
-                <br />
-              </p>
-              <p className="castGenreList">
-                Phasellus egestas, volutpat tortor, eget eleifend, massa
-              </p>
-              <p className="sub-title">
-                Genres:
-                <br />
-              </p>
-              <p className="castGenreList">Phasellus, volutpat</p>
-              <button type="button" className="addListBtn">
-                <FontAwesomeIcon icon="plus" />
-              </button>
-              MY LIST
-            </div>
-          </div>
-        </div>
+        </Carousel>
       </div>
-      <a
-        className="carousel-control-prev"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true" />
-        <span className="sr-only">Previous</span>
-      </a>
-      <a
-        className="carousel-control-next"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true" />
-        <span className="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 export default Slider;
