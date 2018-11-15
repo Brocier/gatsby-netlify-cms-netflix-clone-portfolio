@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/netflixclone`,
   siteMetadata: {
     title: "JSchoenfeld Portfolio site"
   },
@@ -18,13 +19,6 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: "pages"
-      }
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/img`,
-        name: "images"
       }
     },
     "gatsby-plugin-sharp",
