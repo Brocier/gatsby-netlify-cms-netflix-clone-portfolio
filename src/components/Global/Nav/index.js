@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import SearchInput from "./SearchInput";
-import netflixLogo from "../../../assets/img/Netflix-logo.png";
+import netflixLogo from "../../../../static/img/Netflix-logo.png";
 
 const Nav = () => (
   <>

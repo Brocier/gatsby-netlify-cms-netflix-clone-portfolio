@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
+import github from "../../static/img/github-icon.svg";
 import favicon from "../../static/img/icons/favicon.ico";
 
 const Navbar = () => (
