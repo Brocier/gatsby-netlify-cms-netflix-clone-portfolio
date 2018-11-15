@@ -9,8 +9,7 @@ import CarouselContent from "./CarouselContent";
 
 const items = [
   {
-    src:
-      "https://s-media-cache-ak0.pinimg.com/originals/26/00/d5/2600d5fda64fb9356b117219ca2bfce9.jpg",
+    src: "https://i.imgur.com/6A3M2xf.jpg",
     altText: "Stranger Things Picture",
     title: `Stranger Things`,
     subtitle: "97% Match 2016 TV-14 season 1",
@@ -22,8 +21,7 @@ const items = [
     genreList: `volutpat, tortor, massa`
   },
   {
-    src:
-      "https://resi.ze-robot.com/dl/wa/wallpaper-i-made-from-the-new-blade-runner-2049-reveal-trailer-multiple-albums-1920%C3%97811.jpg",
+    src: "https://i.imgur.com/Q3FK1Oh.jpg",
     altText: "Blade Runner 2047 Picture",
     title: "Blade Runner 2047",
     subtitle: "98% Match 2016 TV-14 season 1",
@@ -35,7 +33,7 @@ const items = [
     genreList: `volutpat, tortor, massa`
   },
   {
-    src: "http://www.studiorjm.net/wp-content/uploads/2013/10/Gravity.jpg",
+    src: "https://i.imgur.com/PvmmqW6.jpg",
     altText: "Gravity Picture",
     title: "Gravity",
     subtitle: "99% Match 2016 TV-14 season 1",

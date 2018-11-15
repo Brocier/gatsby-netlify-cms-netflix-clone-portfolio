@@ -29,7 +29,9 @@ class ViewMovie extends React.Component {
     return (
       <div id="moviePage-container">
         <Poster
-          posterPath={`http://image.tmdb.org/t/p/w500//${theMovie.poster_path}`}
+          posterPath={`https://image.tmdb.org/t/p/w500//${
+            theMovie.poster_path
+          }`}
         />
         <Descriptions theMovie={theMovie} castList={castList} />
       </div>

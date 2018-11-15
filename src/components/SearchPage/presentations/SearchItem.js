@@ -43,7 +43,7 @@ class SearchItem extends React.Component {
         <img
           alt="img"
           className="tile-img"
-          src={`http://image.tmdb.org/t/p/w500//${movie.backdrop_path}`}
+          src={`https://image.tmdb.org/t/p/w500//${movie.backdrop_path}`}
         />
       );
     }
@@ -52,7 +52,7 @@ class SearchItem extends React.Component {
         <img
           alt="img"
           className="tile-img "
-          src={`http://image.tmdb.org/t/p/w500//${movie.poster_path}`}
+          src={`https://image.tmdb.org/t/p/w500//${movie.poster_path}`}
         />
       );
     }
@@ -60,7 +60,7 @@ class SearchItem extends React.Component {
       <img
         alt="img"
         className="tile-img"
-        src="http://via.placeholder.com/280x160"
+        src="https://via.placeholder.com/280x160"
       />
     );
   };
