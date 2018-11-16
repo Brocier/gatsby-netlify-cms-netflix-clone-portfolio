@@ -1,11 +1,14 @@
 module.exports = {
   pathPrefix: `/netflixclone`,
   siteMetadata: {
+    siteUrl: "https://www.joshuaschoenfeld.com",
     title: "JSchoenfeld Portfolio site"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-offline",
     "gatsby-plugin-sass",
+    "gatsby-plugin-robots-txt",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
@@ -15,10 +18,27 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Roboto:300"]
+        }
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
         name: "pages"
+      }
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#b9090b`,
+        // Disable the loading spinner.
+        showSpinner: false
       }
     },
     "gatsby-plugin-sharp",
@@ -51,6 +71,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`
       }
     },
+    "gatsby-plugin-netlify-cache",
     "gatsby-plugin-netlify" // make sure to keep it last in the array
   ]
 };
