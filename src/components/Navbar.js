@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../../static/img/github-icon.png";
+import github from "../../static/img/github-icon-white.png";
 import logo from "../../static/img/js-netflix-red.png";
 
 const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
+  <nav className="navbar navbar-dark is-transparent">
+    <div className="d-flex align-items-center">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <figure className="image">
+          <figure className="image m-0">
             <img
               src={logo}
               alt="JSchoenfeld Logo"
@@ -20,37 +20,39 @@ const Navbar = () => (
           </figure>
         </Link>
       </div>
-      <div className="navbar-start">
-        <Link className="navbar-item" to="/about">
+
+      <div class="navbar-nav flew-row">
+        <Link className="nav-link active px-2" to="/">
+          Projects
+        </Link>
+        <Link className="nav-link px-2" to="/about">
           About
         </Link>
-        <Link className="navbar-item" to="/pets">
+        <Link className="nav-link px-2" to="/pets">
           Pets
         </Link>
-        <Link className="navbar-item" to="/resume">
+        <Link className="nav-link px-2" to="/resume">
           Resume
         </Link>
-        <Link className="navbar-item" to="/based-on">
+        <Link className="nav-link px-2" to="/based-on">
           Based On
         </Link>
       </div>
-      <div className="navbar-end">
-        <a
-          className="navbar-item"
-          href="https://github.com/Brocier/JSchoenfeld-Portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img
-              src={github}
-              alt="Github"
-              style={{ maxHeight: "48px", maxWidth: "48px" }}
-            />
-          </span>
-        </a>
-      </div>
     </div>
+    <a
+      className="navbar-item"
+      href="https://github.com/Brocier/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span className="icon">
+        <img
+          src={github}
+          alt="Github"
+          style={{ maxHeight: "44px", maxWidth: "44px" }}
+        />
+      </span>
+    </a>
   </nav>
 );
 
