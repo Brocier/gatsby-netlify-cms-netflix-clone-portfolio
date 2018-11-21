@@ -2,7 +2,7 @@ import React from "react";
 import ViewSearch from "./ViewSearch";
 import { Nav, Footer } from "../Global";
 
-const SearchPage = () => (
+const Search = () => (
   <div className="SearchPage-container">
     <Nav />
     <ViewSearch />
@@ -10,4 +10,4 @@ const SearchPage = () => (
   </div>
 );
 
-export default SearchPage;
+export default Search;
