@@ -33,9 +33,6 @@ const Navbar = () => (
         <Link className="navbar-item" to="/based-on">
           Based On
         </Link>
-        <Link className="navbar-item" to="/netflixclone">
-          Netflix Clone
-        </Link>
       </div>
       <div className="navbar-end">
         <a
