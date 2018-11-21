@@ -21,7 +21,7 @@ const Navbar = () => (
         </Link>
       </div>
 
-      <div class="navbar-nav flew-row">
+      <div className="navbar-nav" style={{ "flex-direction": "row" }}>
         <Link className="nav-link active px-2" to="/">
           Projects
         </Link>
