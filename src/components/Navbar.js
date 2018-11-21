@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../../static/img/github-icon.png";
-import favicon from "../../static/img/icons/favicon.ico";
+import logo from "../../static/img/js-netflix-red.png";
 
 const Navbar = () => (
   <nav className="navbar is-transparent">
@@ -10,11 +10,11 @@ const Navbar = () => (
         <Link to="/" className="navbar-item">
           <figure className="image">
             <img
-              src={favicon}
+              src={logo}
               alt="JSchoenfeld Logo"
               style={{
-                width: "100%",
-                maxHeight: "100%"
+                width: "44px",
+                maxHeight: "44px"
               }}
             />
           </figure>
