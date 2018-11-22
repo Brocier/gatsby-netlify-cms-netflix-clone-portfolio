@@ -6,7 +6,7 @@
   position: absolute;
   text-align: left;
   bottom: 80px;
-  left: 145px;
+  left: 200px;
   .title {
     font-size: 45px;
     font-weight: bold;
@@ -19,7 +19,7 @@
     color: #ecf0f1;
   }
   .description {
-    width: 350px;
+    max-width: 350px;
   }
 }
 

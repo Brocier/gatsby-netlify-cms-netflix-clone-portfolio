@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
+import Slider from "../components/Slider";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/index.scss";
 export default class IndexPage extends React.Component {
@@ -11,6 +12,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
+        <Slider />
         <section className="section">
           <div className="container">
             <div className="content">

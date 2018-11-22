@@ -10,11 +10,11 @@ const CarouselContent = ({ item }) => {
   return (
     <div className="text">
       <h3 className="title">{item.title}</h3>
-      <p className="sub-title">
+      <div className="sub-title">
         <b> {item.subtitle}</b>
         <br />
-        <div className="sub-title description"> {item.description}</div>
-      </p>
+        <p className="sub-title description"> {item.description}</p>
+      </div>
       <p className="sub-title">
         Cast:
         <br />
