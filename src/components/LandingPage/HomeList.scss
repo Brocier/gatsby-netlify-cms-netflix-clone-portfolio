@@ -1,4 +1,5 @@
 /* tiles CSS transition and transform effects */
+@import "../../assets/css/vars";
 
 .list-container {
   max-width: 100%;
@@ -47,7 +48,7 @@ html {
   width: 4%;
   height: 280px;
   z-index: 40;
-  background: $netflixBlack;
+  background: #000;
   opacity: 0.5;
   cursor: pointer;
   text-align: center;
@@ -63,7 +64,7 @@ html {
   width: 4%;
   height: 280px;
   z-index: 40;
-  background: $netflixBlack;
+  background: #000;
   opacity: 0.5;
   display: flex;
   cursor: pointer;
@@ -84,6 +85,7 @@ html {
 }
 
 /* MQ */
+
 @include maxMediaQueries(1400px) {
   .tile {
     width: $tileWidth * 0.95;
@@ -123,6 +125,20 @@ html {
     &:hover {
       transform: translate3d(-70px, 0, 0);
     }
+  }
+  .list-title {
+    padding-left: 20px;
+  }
+  .left-controls {
+    height: 180px;
+    width: 10%;
+  }
+  .right-controls {
+    height: 180px;
+    width: 10%;
+  }
+  #content {
+    padding: 30px 0 30px 0;
   }
 }
 @include maxMediaQueries(445px) {
