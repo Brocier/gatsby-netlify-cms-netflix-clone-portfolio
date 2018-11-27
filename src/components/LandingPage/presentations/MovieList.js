@@ -52,7 +52,7 @@ class MovieList extends React.Component {
       <div className="list-container">
         <span
           onClick={this.handleLeftClick}
-          className="left-controls"
+          className="list-controls left-controls"
           role="button"
         />
 
@@ -65,7 +65,7 @@ class MovieList extends React.Component {
 
         <span
           onClick={this.handleRightClick}
-          className="right-controls"
+          className="list-controls right-controls"
           role="button"
         />
       </div>

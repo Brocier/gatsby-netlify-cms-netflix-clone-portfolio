@@ -41,36 +41,27 @@ html {
   background: transparent;
 }
 
-.left-controls {
+.list-controls {
   position: absolute;
   top: 0;
-  left: 0;
   width: 4%;
   height: 280px;
   z-index: 40;
-  background: #000;
+  background: $netflixBlack;
   opacity: 0.5;
   cursor: pointer;
   text-align: center;
   display: flex;
-  color: #fff;
+  color: $netflixWhite;
   justify-content: center;
 }
 
+.left-controls {
+  left: 0;
+}
+
 .right-controls {
-  position: absolute;
-  top: 0;
   right: 0;
-  width: 4%;
-  height: 280px;
-  z-index: 40;
-  background: #000;
-  opacity: 0.5;
-  display: flex;
-  cursor: pointer;
-  text-align: center;
-  justify-content: center;
-  color: #fff;
 }
 
 .module-section {
