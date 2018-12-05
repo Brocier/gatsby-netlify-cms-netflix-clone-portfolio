@@ -9,9 +9,6 @@ import {
   ListHeader
 } from "../components/LandingPage/presentations";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../components/Global/index.scss";
-
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;

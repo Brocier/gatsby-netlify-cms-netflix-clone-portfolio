@@ -5,6 +5,9 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import favicon from "../../../static/img/icons/favicon.ico";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.scss";
+
 const TemplateWrapper = ({ children }) => (
   <div className="layout-container">
     <Helmet
