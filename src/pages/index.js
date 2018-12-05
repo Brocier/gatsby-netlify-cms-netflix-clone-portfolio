@@ -1,9 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
-import Layout from "../components/Layout";
-import Slider from "../components/Slider";
-import HomeList from "../components/LandingPage/HomeList.js";
+import { graphql } from "gatsby";
+import { Layout, Slider } from "../components";
+import { HomeList } from "../components/LandingPage";
+import {
+  ProjectList,
+  ListHeader
+} from "../components/LandingPage/presentations";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/index.scss";
@@ -16,46 +19,11 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Slider />
+
+        <ListHeader header="My Projects" />
+        <ProjectList projectList={posts} />
+
         <HomeList />
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">My Projects</h1>
-            </div>
-            {posts.map(({ node: post }) => (
-              <div
-                className="content"
-                style={{
-                  backgroundColor: "darkgrey",
-                  border: "1px solid #eaecee",
-                  padding: "2em 4em"
-                }}
-                key={post.id}
-              >
-                <img
-                  src={post.frontmatter.thumbnail}
-                  alt={post.frontmatter.title + " Thumbnail"}
-                  width="60px"
-                />
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span>&bull;</span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
       </Layout>
     );
   }

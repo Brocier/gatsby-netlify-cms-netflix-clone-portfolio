@@ -1,4 +1,5 @@
 import MovieList from "./MovieList";
 import ListHeader from "./ListHeader";
+import ProjectList from "./ProjectList";
 
-export { MovieList, ListHeader };
+export { ProjectList, MovieList, ListHeader };
