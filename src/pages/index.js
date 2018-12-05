@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
+import Layout from "../components/Global/Layout";
 import Slider from "../components/Slider";
 import HomeList from "../components/LandingPage/HomeList";
 import {
@@ -10,7 +10,7 @@ import {
 } from "../components/LandingPage/presentations";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../components/index.scss";
+import "../components/Global/index.scss";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -21,7 +21,7 @@ export default class IndexPage extends React.Component {
       <Layout>
         <Slider />
 
-        <ListHeader header="My Projects" />
+        <ListHeader header="All Projects" />
         <ProjectList projectList={posts} />
 
         <HomeList />

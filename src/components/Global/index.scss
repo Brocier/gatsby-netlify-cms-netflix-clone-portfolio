@@ -1,4 +1,4 @@
-@import "../assets/css/vars.scss";
+@import "../../assets/css/vars.scss";
 
 /* Global */
 * {
@@ -16,4 +16,12 @@
 
 body {
   width: 100%;
+}
+
+footer {
+  margin-top: 50px;
+  p {
+    padding-top: 12px;
+    font-size: 0.7em !important;
+  }
 }

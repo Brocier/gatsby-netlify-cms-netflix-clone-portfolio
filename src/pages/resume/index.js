@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../components/Layout";
+import Layout from "../../components/Global/Layout";
 import resume from "../../../static/img/Joshua Schoenfeld Resume.pdf";
 
 const Resume = () => (
