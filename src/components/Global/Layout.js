@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import favicon from "../../../static/img/icons/favicon.ico";
 
 const TemplateWrapper = ({ children }) => (
-  <>
+  <div className="layout-container">
     <Helmet
       title="Projects | Josh's Portfolio"
       link={[
@@ -20,7 +20,7 @@ const TemplateWrapper = ({ children }) => (
     <Navbar />
     {children}
     <Footer />
-  </>
+  </div>
 );
 
 export default TemplateWrapper;
