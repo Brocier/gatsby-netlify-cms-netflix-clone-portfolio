@@ -3,7 +3,7 @@ import React from "react";
 import Proptypes from "prop-types";
 import { connect } from "react-redux";
 import { MovieList, ListHeader } from "./presentations";
-import { movieListAction, movieAction } from "../../actions";
+import { movieListAction } from "../../actions";
 import "./HomeList.scss";
 
 class HomeList extends React.Component {
