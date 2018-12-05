@@ -18,6 +18,8 @@ const TemplateWrapper = ({ children }) => (
       ]}
       lang="en"
       noscript="This site needs javascript to load. Thanks!"
+      name="google-site-verification"
+      content="IZs8BYnxDB_OGUAI86c8LhoYVsZhFkY35V6ec8nV3-o"
     />
     <Navbar />
     {children}
