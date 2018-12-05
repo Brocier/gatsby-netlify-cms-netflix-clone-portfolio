@@ -16,6 +16,8 @@ const TemplateWrapper = ({ children }) => (
           href: `${favicon}`
         }
       ]}
+      lang="en"
+      noscript="This site needs javascript to load. Thanks!"
     />
     <Navbar />
     {children}
