@@ -50,7 +50,6 @@ class ProjectListItem extends React.Component {
 
   render() {
     const { project } = this.props;
-    console.log(project + "PROPS");
     return (
       <Link className="tile" to={`${project.fields.slug}`}>
         <div className="tile-img">
