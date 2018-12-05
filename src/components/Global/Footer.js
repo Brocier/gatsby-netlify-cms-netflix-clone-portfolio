@@ -10,7 +10,10 @@ const Footer = () => (
       <p className="text-muted lead" href="#">
         &copy;2018. All Rights Reserved by JSchoenfeld.
       </p>
-      <a className="navbar-brand text-muted" href="https://github.com/Brocier/">
+      <a
+        className="navbar-brand text-muted"
+        href="https://github.com/Brocier/JSchoenfeld-Portfolio"
+      >
         github
       </a>
     </nav>
