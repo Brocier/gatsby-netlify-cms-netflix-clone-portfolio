@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import github from "../../../static/img/github-icon-white.png";
 import logo from "../../../static/img/js-netflix-red.png";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 const Navbar = () => (
   <nav className="navbar navbar-dark is-transparent">
@@ -39,7 +40,7 @@ const Navbar = () => (
         </Link>
       </div>
     </div>
-    <a
+    <OutboundLink
       className="navbar-item"
       href="https://github.com/Brocier/"
       target="_blank"
@@ -52,7 +53,7 @@ const Navbar = () => (
           style={{ maxHeight: "44px", maxWidth: "44px" }}
         />
       </span>
-    </a>
+    </OutboundLink>
   </nav>
 );
 

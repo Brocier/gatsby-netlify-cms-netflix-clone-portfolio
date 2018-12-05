@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 const Footer = () => (
   <footer className="footer-container">
@@ -10,12 +11,12 @@ const Footer = () => (
       <p className="text-muted lead" href="#">
         &copy;2018. All Rights Reserved by JSchoenfeld.
       </p>
-      <a
+      <OutboundLink
         className="navbar-brand text-muted"
         href="https://github.com/Brocier/JSchoenfeld-Portfolio"
       >
         github
-      </a>
+      </OutboundLink>
     </nav>
   </footer>
 );

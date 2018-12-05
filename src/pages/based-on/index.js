@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../../components/Global/Layout";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 class index extends Component {
   render() {
@@ -9,9 +10,9 @@ class index extends Component {
           <h1>Based On:</h1>
           <ul>
             <li>
-              <a href="https://github.com/yuchiu/netflix-clone">
+              <OutboundLink href="https://github.com/yuchiu/netflix-clone">
                 Netflix Clone
-              </a>
+              </OutboundLink>
             </li>
             <li>
               <img
@@ -23,9 +24,9 @@ class index extends Component {
 
             <li />
             <li>
-              <a href="https://github.com/netlify-templates/gatsby-starter-netlify-cms">
+              <OutboundLink href="https://github.com/netlify-templates/gatsby-starter-netlify-cms">
                 Gatsby + Netlify CMS Starter
-              </a>
+              </OutboundLink>
             </li>
             <li>
               <img
