@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import { Layout, Slider } from "../components";
-import { HomeList } from "../components/LandingPage";
+import Layout from "../components/Layout";
+import Slider from "../components/Slider";
+import HomeList from "../components/LandingPage/HomeList";
 import {
   ProjectList,
   ListHeader
