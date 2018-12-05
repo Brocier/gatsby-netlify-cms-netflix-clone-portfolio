@@ -41,7 +41,7 @@ class ProjectListItem extends React.Component {
     }
     return (
       <img
-        alt="image"
+        alt="Placeholder Thumbnail"
         className="tile-img"
         src="https://via.placeholder.com/280x160"
       />
