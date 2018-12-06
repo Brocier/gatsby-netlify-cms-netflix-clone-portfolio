@@ -10,7 +10,8 @@ description: >-
 tags:
   - React
   - Gatsby
-  - Netlify
+  - Netlify Hosting
+  - Netlify CMS
   - Redux
   - Portfolio
 ---

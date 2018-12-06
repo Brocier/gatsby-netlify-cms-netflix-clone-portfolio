@@ -8,10 +8,9 @@ description: |-
   The first project I ever coded.
   https://memory-game-v1.netlify.com
 tags:
-  - Test
-  - create
-  - please
-  - ignore
+  - HTML
+  - CSS
+  - JS
 ---
 
 https://github.com/Brocier/wdi-memorygame
