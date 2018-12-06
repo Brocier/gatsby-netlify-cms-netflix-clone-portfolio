@@ -60,7 +60,7 @@ class ListItem extends React.Component {
   render() {
     const { movie } = this.props;
     return (
-      <Link className="tile" to={`/movie/${movie.id}`}>
+      <Link className="tile" to={`based-on`}>
         <div className="tile-img">{this.renderPic(movie)}</div>
         <div className=" photo-overlay">
           <div className="tile-text-container">
