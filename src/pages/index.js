@@ -11,16 +11,25 @@ import {
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    const {
+      data: {
+        allMarkdownRemark: { group }
+      }
+    } = this.props;
 
     return (
       <Layout>
         <Slider />
-
-        <ListHeader header="All Projects" />
-        <ProjectList projectList={posts} />
-
+        {group
+          .sort(function(a, b) {
+            return b.totalCount - a.totalCount;
+          })
+          .map(tag => (
+            <div key={tag.fieldValue}>
+              <ListHeader header={tag.fieldValue} />
+              <ProjectList projectList={tag.edges} />
+            </div>
+          ))}
         <HomeList />
       </Layout>
     );
@@ -36,21 +45,24 @@ IndexPage.propTypes = {
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { templateKey: { eq: "project-post" } } }
     ) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            thumbnail
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
+      group(field: frontmatter___tags) {
+        totalCount
+        fieldValue
+        edges {
+          node {
+            excerpt(pruneLength: 400)
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              thumbnail
+              title
+              templateKey
+              date(formatString: "MMMM DD, YYYY")
+            }
           }
         }
       }
