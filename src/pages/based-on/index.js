@@ -1,45 +1,33 @@
 import React, { Component } from "react";
 import Layout from "../../components/Global/Layout";
+import Slider from "../../components/Slider";
+import HomeList from "../../components/LandingPage/HomeList";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
-class index extends Component {
+export default class BasedOnIndexPage extends Component {
   render() {
     return (
       <Layout>
-        <div className="container">
+        <div className="container align-text-bottom">
           <h1>Based On:</h1>
-          <ul>
-            <li>
-              <OutboundLink href="https://github.com/yuchiu/netflix-clone">
-                Netflix Clone
-              </OutboundLink>
-            </li>
-            <li>
-              <img
-                src="https://github.com/yuchiu/Netflix-clone/blob/master/demo2.gif?raw=true"
-                alt="pic"
-                width="200"
-              />
-            </li>
-
-            <li />
-            <li>
-              <OutboundLink href="https://github.com/netlify-templates/gatsby-starter-netlify-cms">
-                Gatsby + Netlify CMS Starter
-              </OutboundLink>
-            </li>
-            <li>
-              <img
-                src="https://duaw26jehqd4r.cloudfront.net/items/430y431y2g1U3l0R1p3i/Image%202018-11-09%20at%203.48.40%20PM.png?v=e093e736"
-                alt="pic"
-                width="200"
-              />
-            </li>
-          </ul>
+          <OutboundLink
+            className="display-3"
+            href="https://github.com/yuchiu/netflix-clone"
+          >
+            Yuchiu's Netflix Clone
+          </OutboundLink>
+          <br />
+          &amp;
+          <OutboundLink
+            className="display-4"
+            href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+          >
+            The Gatsby + Netlify CMS Starter
+          </OutboundLink>
         </div>
+        <Slider />
+        <HomeList />
       </Layout>
     );
   }
 }
-
-export default index;
