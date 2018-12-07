@@ -4,15 +4,18 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 const Footer = () => (
   <footer className="footer-container">
-    <nav className="navbar navbar-light bg-faded">
-      <Link className="navbar-brand text-danger font-weight-bold" to="/resume">
+    <nav className="navbar navbar-light flex-nowrap bg-faded flex-md-row flex-sm-column ">
+      <Link
+        className="p-0 m-0 navbar-brand text-danger font-weight-bold"
+        to="/resume"
+      >
         JSchoenfeld
       </Link>
-      <p className="text-muted lead" href="#">
+      <p className="p-0 m-0 text-muted lead" href="#">
         &copy;2018. All Rights Reserved by JSchoenfeld.
       </p>
       <OutboundLink
-        className="navbar-brand text-muted"
+        className="p-0 m-0 navbar-brand text-muted"
         href="https://github.com/Brocier/JSchoenfeld-Portfolio"
       >
         github
