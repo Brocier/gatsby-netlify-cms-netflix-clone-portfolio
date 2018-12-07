@@ -3,14 +3,7 @@ import { Link } from "gatsby";
 import github from "../../../static/img/github-icon-white.png";
 import mybrand from "../../../static/img/js-netflix-red.png";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem
-} from "reactstrap";
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
 export default class NavigationBar extends React.Component {
   constructor(props) {
@@ -40,7 +33,7 @@ export default class NavigationBar extends React.Component {
         className=""
         style={{ flexDirection: "row" }}
       >
-        <NavbarBrand>
+        <div className="navbar-brand">
           <Link to="/" className="navbar-item">
             <figure className="image m-0">
               <img
@@ -53,7 +46,7 @@ export default class NavigationBar extends React.Component {
               />
             </figure>
           </Link>
-        </NavbarBrand>
+        </div>
 
         <div className="d-flex flex-md-grow-1 flex-md-row-reverse justify-content-between">
           <OutboundLink
