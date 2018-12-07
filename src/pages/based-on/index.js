@@ -8,13 +8,15 @@ export default class BasedOnIndexPage extends Component {
   render() {
     return (
       <Layout>
+        <Slider />
+        <HomeList />
         <div className="container align-text-bottom">
           <h1>Based On:</h1>
           <OutboundLink
             className="display-3"
             href="https://github.com/yuchiu/netflix-clone"
           >
-            Yuchiu's Netflix Clone
+            Yuchiu's NetflixClone
           </OutboundLink>
           <br />
           &amp;
@@ -25,8 +27,6 @@ export default class BasedOnIndexPage extends Component {
             The Gatsby + Netlify CMS Starter
           </OutboundLink>
         </div>
-        <Slider />
-        <HomeList />
       </Layout>
     );
   }
