@@ -33,3 +33,11 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+
+@include maxMediaQueries(750px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
