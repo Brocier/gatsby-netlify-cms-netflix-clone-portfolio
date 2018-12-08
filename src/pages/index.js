@@ -2,8 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Global/Layout";
-import Slider from "../components/Slider";
-import HomeList from "../components/LandingPage/HomeList";
+import ProjectCarousel from "../components/ProjectCarousel";
 import {
   ProjectList,
   ListHeader
@@ -19,7 +18,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <Slider />
+        <ProjectCarousel />
         {group
           .sort(function(a, b) {
             return b.totalCount - a.totalCount;
@@ -30,7 +29,6 @@ export default class IndexPage extends React.Component {
               <ProjectList projectList={tag.edges} />
             </div>
           ))}
-        <HomeList />
       </Layout>
     );
   }
