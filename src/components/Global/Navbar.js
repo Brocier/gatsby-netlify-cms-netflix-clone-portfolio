@@ -21,9 +21,6 @@ export default class NavigationBar extends React.Component {
   }
 
   render() {
-    const isActive = ({ isPartiallyCurrent }) => {
-      return isPartiallyCurrent ? { className: "active" } : null;
-    };
     return (
       <Navbar
         color="faded"
