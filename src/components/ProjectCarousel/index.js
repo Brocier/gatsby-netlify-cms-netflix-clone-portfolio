@@ -10,31 +10,20 @@ import "./_Slider.scss";
 
 const items = [
   {
-    src: "https://i.imgur.com/6A3M2xf.jpg",
-    altText: "Stranger Things Picture",
-    title: `Stranger Things`,
+    src:
+      "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=50",
+    altText: "First Slide of laptop and lightbulb",
+    title: `Hello World!`,
     description: `
-    Phasellus a nulla vitae augue convallis efficitur.
-    Nam gravida viverra velit venenatis elementum.
-    Phasellus egestas volutpa`
+    Welcome to my Portfolio site!`
   },
   {
-    src: "https://i.imgur.com/Q3FK1Oh.jpg",
-    altText: "Blade Runner 2047 Picture",
-    title: "Blade Runner 2047",
+    src:
+      "https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=50",
+    altText: "Second Slide of a black and white desk setup",
+    title: "I'm Joshua Schoenfeld",
     description: `
-    Phasellus a nulla vitae augue convallis efficitur.
-    Nam gravida viverra velit venenatis elementum.
-    Phasellus egestas volutpa`
-  },
-  {
-    src: "https://i.imgur.com/PvmmqW6.jpg",
-    altText: "Gravity Picture",
-    title: "Gravity",
-    description: `
-    Phasellus a nulla vitae augue convallis efficitur.
-    Nam gravida viverra velit venenatis elementum.
-    Phasellus egestas volutpa`
+    Problem-solving is my passion. `
   }
 ];
 
