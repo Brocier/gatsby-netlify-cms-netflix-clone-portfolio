@@ -10,8 +10,7 @@ import "./_Slider.scss";
 
 const items = [
   {
-    src:
-      "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=50",
+    src: "https://i.imgur.com/p7jQN99.png?1",
     altText: "First Slide of laptop and lightbulb",
     title: `Hello World!`,
     description: `
