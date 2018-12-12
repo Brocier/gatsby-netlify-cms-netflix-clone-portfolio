@@ -6,7 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from "reactstrap";
-import "./_Slider.scss";
+import "./_Carousel.scss";
 
 const items = [
   {
@@ -78,7 +78,7 @@ export default class Slider extends Component {
         >
           <img src={item.src} alt={item.altText} />
           <CarouselCaption
-            className={`text ${item.clas}`}
+            className={`floatingtext ${item.clas}`}
             captionHeader={item.title}
             captionText={item.description}
           />
@@ -87,7 +87,7 @@ export default class Slider extends Component {
     });
 
     return (
-      <div className="slider">
+      <div className="carousel">
         <Carousel
           activeIndex={activeIndex}
           next={this.next}
