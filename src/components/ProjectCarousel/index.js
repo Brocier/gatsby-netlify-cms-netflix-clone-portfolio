@@ -14,7 +14,8 @@ const items = [
     altText: "First Slide of laptop and lightbulb",
     title: `Hello World!`,
     description: `
-    Welcome to my Portfolio site!`
+    Welcome to my Portfolio site!`,
+    clas: "first-slide"
   },
   {
     src:
@@ -22,7 +23,8 @@ const items = [
     altText: "Second Slide of a black and white desk setup",
     title: "I'm Joshua Schoenfeld",
     description: `
-    Problem-solving is my passion. `
+    Problem-solving is my passion. `,
+    clas: "second-slide"
   }
 ];
 
@@ -76,7 +78,7 @@ export default class Slider extends Component {
         >
           <img src={item.src} alt={item.altText} />
           <CarouselCaption
-            className="text"
+            className={`text ${item.clas}`}
             captionHeader={item.title}
             captionText={item.description}
           />

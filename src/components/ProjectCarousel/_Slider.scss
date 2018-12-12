@@ -3,18 +3,27 @@
 .slider {
   margin-bottom: 80px;
 }
+.first-slide {
+  max-width: 320px;
+}
+.second-slide {
+  max-width: 582px;
+}
 
 .text {
-  text-align: left;
-  bottom: 40vh;
+  text-align: center;
+  bottom: 30vh;
+  background-color: rgba(163, 163, 161, 0.2);
+  padding: 10px;
+  border-radius: 50px;
   h3 {
     font-size: 45px;
+    font-size: 7vh;
     font-weight: bold;
   }
   p {
-    max-width: 350px;
-    color: #a3a3a1;
     background-color: transparent;
+    font-weight: bold;
   }
 }
 
