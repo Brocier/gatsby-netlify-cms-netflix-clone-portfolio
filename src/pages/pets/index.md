@@ -2,24 +2,26 @@
 templateKey: pet-page
 title: All my pets
 ---
+
 ### Murdock
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+My Dog. Husky/GSP mix. 60-70lbs with a lot of fur.
 
 ### Tiberius
 
-![Tiberius on the couch.](/img/tiberius-on-couch.jpg)
+My Cat. Got him from a foster as a kitten. I wanted an orange long haired cat, and my wife helped me find him.
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+![Tiberius on the couch.](/img/tiberius-on-couch.jpg)
 
 ### Braille
 
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+Cat. One eye is blind. Very snuggly and loyal. Our most skittish cat.
 
 ### Arya
 
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+My first cat. Found her as a kitten under a porch, and brought her home with the intention of dropping her off at a shelter in the morning. She fell asleep on my chest that night and never left my heart.
 
 ### Sawyer
 
-What a doggo
+The snuggliest doggo.
+He's the family emotional support animal who gives and takes more love than any other living creature.
