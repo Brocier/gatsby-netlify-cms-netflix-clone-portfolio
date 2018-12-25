@@ -3,6 +3,7 @@ import Proptypes from "prop-types";
 import { findDOMNode } from "react-dom";
 import $ from "jquery";
 import ProjectListItem from "./ProjectListItem";
+import "./../HomeList.scss";
 
 class ProjectList extends React.Component {
   state = {
