@@ -1,12 +1,12 @@
 /* eslint-disable */
-import React from "react";
+import React, { Component } from "react";
 import Proptypes from "prop-types";
 import { connect } from "react-redux";
 import { MovieList, ListHeader } from "./presentations";
 import { movieListAction } from "../../actions";
 import "./HomeList.scss";
 
-class HomeList extends React.Component {
+class HomeList extends Component {
   componentDidMount() {
     const {
       fetchNowPlaying,

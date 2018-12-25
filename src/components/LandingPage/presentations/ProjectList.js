@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import Proptypes from "prop-types";
 import { findDOMNode } from "react-dom";
 import $ from "jquery";
 import ProjectListItem from "./ProjectListItem";
 import "./../HomeList.scss";
 
-class ProjectList extends React.Component {
+export default class ProjectList extends Component {
   state = {
     margin: 0
   };
@@ -79,4 +79,3 @@ class ProjectList extends React.Component {
 ProjectList.propTypes = {
   projectList: Proptypes.array
 };
-export default ProjectList;

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import Proptypes from "prop-types";
 import { Link } from "gatsby";
 
-class ListItem extends React.Component {
+export default class ListItem extends Component {
   constructor(props) {
     super(props);
     this.renderTitle = this.renderTitle.bind(this);
@@ -79,4 +79,3 @@ class ListItem extends React.Component {
 ListItem.propTypes = {
   movie: Proptypes.object
 };
-export default ListItem;

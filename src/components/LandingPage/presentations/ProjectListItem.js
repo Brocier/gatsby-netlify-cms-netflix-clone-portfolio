@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import Proptypes from "prop-types";
 import { Link } from "gatsby";
 
-class ProjectListItem extends React.Component {
+export default class ProjectListItem extends Component {
   constructor(props) {
     super(props);
     this.renderTitle = this.renderTitle.bind(this);
@@ -72,4 +72,3 @@ class ProjectListItem extends React.Component {
 ProjectListItem.propTypes = {
   project: Proptypes.object
 };
-export default ProjectListItem;

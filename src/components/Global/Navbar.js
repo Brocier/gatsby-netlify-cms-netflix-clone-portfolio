@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "gatsby";
 import github from "../../../static/img/github-icon-white.png";
 import myBrand from "../../../static/img/js-netflix-red.png";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
-export default class NavigationBar extends React.Component {
+export default class NavigationBar extends Component {
   constructor(props) {
     super(props);
 

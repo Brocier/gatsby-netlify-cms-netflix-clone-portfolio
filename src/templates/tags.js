@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Global/Layout";
 
-class TagRoute extends React.Component {
+export default class TagRoute extends Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
     const postLinks = posts.map(post => (
@@ -45,8 +45,6 @@ class TagRoute extends React.Component {
     );
   }
 }
-
-export default TagRoute;
 
 export const tagPageQuery = graphql`
   query TagPage($tag: String) {

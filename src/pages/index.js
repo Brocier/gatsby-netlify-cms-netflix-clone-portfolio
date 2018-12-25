@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Global/Layout";
@@ -8,7 +8,7 @@ import {
   ListHeader
 } from "../components/LandingPage/presentations";
 
-export default class IndexPage extends React.Component {
+export default class IndexPage extends Component {
   render() {
     const {
       data: {

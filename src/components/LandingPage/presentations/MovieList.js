@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import Proptypes from "prop-types";
 import { findDOMNode } from "react-dom";
 import $ from "jquery";
 import ListItem from "./ListItem";
 
-class MovieList extends React.Component {
+export default class MovieList extends Component {
   state = {
     margin: 0
   };
@@ -76,4 +76,3 @@ class MovieList extends React.Component {
 MovieList.propTypes = {
   movieList: Proptypes.array
 };
-export default MovieList;
