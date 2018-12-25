@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import github from "../../../static/img/github-icon-white.png";
-import mybrand from "../../../static/img/js-netflix-red.png";
+import myBrand from "../../../static/img/js-netflix-red.png";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
@@ -34,7 +34,7 @@ export default class NavigationBar extends React.Component {
           <Link to="/" className="navbar-item">
             <figure className="image m-0">
               <img
-                src={mybrand}
+                src={myBrand}
                 alt="JSchoenfeld Logo"
                 style={{
                   width: "44px",

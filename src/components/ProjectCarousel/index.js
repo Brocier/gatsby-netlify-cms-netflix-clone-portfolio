@@ -7,10 +7,12 @@ import {
   CarouselCaption
 } from "reactstrap";
 import "./_Carousel.scss";
+import firstPic from "./../../../static/img/carousel-pic-laptop-lightbulb.jpeg";
+import secondPic from "./../../../static/img/carousel-pic-searchlight.jpeg";
 
 const items = [
   {
-    src: "https://i.imgur.com/p7jQN99.png?1",
+    src: firstPic,
     altText: "First Slide of laptop and lightbulb",
     title: `Hello World!`,
     description: `
@@ -18,9 +20,8 @@ const items = [
     clas: "first-slide"
   },
   {
-    src:
-      "https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=50",
-    altText: "Second Slide of a black and white desk setup",
+    src: secondPic,
+    altText: "Second Slide of a searchlight",
     title: "I'm Joshua Schoenfeld",
     description: `
     Problem-solving is my passion. `,
