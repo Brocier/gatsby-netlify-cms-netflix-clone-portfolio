@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Helmet from "react-helmet";
+
 import Layout from "../../components/Global/Layout";
 import Slider from "../../components/Slider";
 import HomeList from "../../components/LandingPage/HomeList";
@@ -8,6 +10,7 @@ export default class BasedOnIndexPage extends Component {
   render() {
     return (
       <Layout>
+        <Helmet title="Credits Page | Josh's Portfolio" />
         <Slider />
         <HomeList />
         <div className="container align-text-bottom">

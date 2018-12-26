@@ -11,7 +11,7 @@ import "./index.scss";
 const TemplateWrapper = ({ children }) => (
   <div className="layout-container">
     <Helmet
-      title="Projects | Josh's Portfolio"
+      title="Josh's Portfolio"
       link={[
         {
           rel: "shortcut icon",

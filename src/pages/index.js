@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Helmet from "react-helmet";
+
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Global/Layout";
@@ -18,6 +20,7 @@ export default class IndexPage extends Component {
 
     return (
       <Layout>
+        <Helmet title="Projects | Josh's Portfolio" />
         <ProjectCarousel />
         {group
           .sort(function(a, b) {
