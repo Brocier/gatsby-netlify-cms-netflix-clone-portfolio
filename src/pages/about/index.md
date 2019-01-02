@@ -1,9 +1,11 @@
 ---
-templateKey: "about-page"
-path: /about
+templateKey: about-page
 title: About Josh
 ---
+Web Engineering; that’s exactly what I’ve been training for in General Assembly’s Web Development Immersive. This career change has been a huge leap for me, moving my whole family from central Pennsylvania down to join the Atlanta tech community.
 
-### The standard Lorem Ipsum passage, used since the 1500's -The 1914 translation by H. Rackham
+My past experience blends really well with what Gather is looking for in a web developer. I worked as a Chief Lighting Technician for a traveling concert tour. Often times I had to fix extremely complicated moving lights with no prior experience and documentation in different languages. Equipped with the newest version of the user manual I could find a set of precision screwdrivers and I was able to repair tens of thousands of dollars worth of equipment while on their very tight schedule.
 
-"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+Building web applications has a lot of parallels with fixing physical machines and equipment. I am very experienced in using incomplete documentation and using logical discovery to make every process as robust and efficient as possible.
+
+I am future-focused and a ravenous learner. I lead from any position by relating to my co-workers and taking full responsibility for my projects.
