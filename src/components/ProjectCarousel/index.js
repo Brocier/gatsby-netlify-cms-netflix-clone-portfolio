@@ -9,6 +9,7 @@ import {
 import "./_Carousel.scss";
 import firstPic from "./../../../static/img/carousel-pic-laptop-lightbulb.jpeg";
 import secondPic from "./../../../static/img/carousel-pic-searchlight.jpeg";
+import thirdPic from "./../../../static/img/carousel-pic-arts-and-craft-tools.jpeg";
 
 const items = [
   {
@@ -26,6 +27,14 @@ const items = [
     description: `
     Problem-solving is my passion. `,
     clas: "second-slide"
+  },
+  {
+    src: thirdPic,
+    altText: "Third Slide of Arts and Crafts tools",
+    title: "I make things",
+    description: `
+    Check out my projects below! `,
+    clas: "third-slide"
   }
 ];
 
@@ -88,30 +97,28 @@ export default class Slider extends Component {
     });
 
     return (
-      <div className="carousel">
-        <Carousel
+      <Carousel
+        activeIndex={activeIndex}
+        next={this.next}
+        previous={this.previous}
+      >
+        <CarouselIndicators
+          items={items}
           activeIndex={activeIndex}
-          next={this.next}
-          previous={this.previous}
-        >
-          <CarouselIndicators
-            items={items}
-            activeIndex={activeIndex}
-            onClickHandler={this.goToIndex}
-          />
-          {slides}
-          <CarouselControl
-            direction="prev"
-            directionText="Previous"
-            onClickHandler={this.previous}
-          />
-          <CarouselControl
-            direction="next"
-            directionText="Next"
-            onClickHandler={this.next}
-          />
-        </Carousel>
-      </div>
+          onClickHandler={this.goToIndex}
+        />
+        {slides}
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={this.previous}
+        />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={this.next}
+        />
+      </Carousel>
     );
   }
 }

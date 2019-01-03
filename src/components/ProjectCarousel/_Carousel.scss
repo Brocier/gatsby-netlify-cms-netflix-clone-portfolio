@@ -1,7 +1,7 @@
 @import "../../assets/css/vars.scss";
 
 .carousel {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .first-slide {
   max-width: 320px;
@@ -9,21 +9,31 @@
 .second-slide {
   max-width: 582px;
 }
+.third-slide {
+  max-width: 500px;
+}
 
 .floatingtext {
+  display: block !important;
   text-align: center;
-  bottom: 30vh;
+  bottom: 6vh;
   background-color: rgba(163, 163, 161, 0.2);
   padding: 10px;
   border-radius: 50px;
   h3 {
-    font-size: 45px;
-    font-size: 7vh;
+    font-size: 5vh;
     font-weight: bold;
   }
   p {
     background-color: transparent;
     font-weight: bold;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: 30vh;
+    h3 {
+      font-size: 7vh;
+      font-weight: bold;
+    }
   }
 }
 
@@ -56,4 +66,8 @@
   margin-right: 10px;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  cursor: pointer;
 }
