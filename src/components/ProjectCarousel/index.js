@@ -33,7 +33,7 @@ const items = [
     altText: "Third Slide of Arts and Crafts tools",
     title: "I make things",
     description: `
-    Check out my projects below! `,
+    Check out my projects below! They're sorted by themes.`,
     clas: "third-slide"
   }
 ];
