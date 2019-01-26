@@ -1,6 +1,18 @@
 # Welcome to my Portfolio's github page!
 
-## TODO: Write out a readme for this repo.
+Based On:
+
+[Yuchiu's NetflixClone](https://github.com/yuchiu/netflix-clone)
+
+[The Gatsby + Netlify CMS Starter]("https://github.com/netlify-templates/gatsby-starter-netlify-cms")
+
+## TODO: Write out more of an introduction for this idea.
+
+# Next Steps:
+
+- Switch out to getting repo data from Github.
+- Use Netlify CMS to build out a blog that displays within the list of repos.
+- Move wholly into Graphql from Redux.
 
 Figured out how to get the data I want from github.com/api v4 graphql
 
