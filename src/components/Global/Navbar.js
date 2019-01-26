@@ -83,11 +83,6 @@ export default class NavigationBar extends Component {
                   Resume
                 </Link>
               </NavItem>
-              <NavItem>
-                <Link className="nav-link px-2" to="/based-on">
-                  Based On
-                </Link>
-              </NavItem>
             </Nav>
           </Collapse>
           <NavbarToggler onClick={this.toggle} />
