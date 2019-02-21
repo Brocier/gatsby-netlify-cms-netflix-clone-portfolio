@@ -7,33 +7,31 @@ import {
   CarouselCaption
 } from "reactstrap";
 import "./_Carousel.scss";
-import firstPic from "./../../../static/img/carousel-pic-laptop-lightbulb.jpeg";
-import secondPic from "./../../../static/img/carousel-pic-searchlight.jpeg";
-import thirdPic from "./../../../static/img/carousel-pic-arts-and-craft-tools.jpeg";
+import firstPic from "./../../../static/img/laptop-and-coffee.jpg";
+import secondPic from "./../../../static/img/keyboard.jpg";
+import thirdPic from "./../../../static/img/lightbulb.jpg";
 
 const items = [
   {
     src: firstPic,
-    altText: "First Slide of laptop and lightbulb",
-    title: `Hello World!`,
+    altText: "First Slide of laptop and coffee",
+    title: `Joshua Schoenfeld`,
     description: `
-    Welcome to my Portfolio site!`,
+    Analytical | Passionate | Innovative`,
     clas: "first-slide"
   },
   {
     src: secondPic,
-    altText: "Second Slide of a searchlight",
-    title: "I'm Joshua Schoenfeld",
-    description: `
-    Problem-solving is my passion. `,
+    altText: "Second Slide of a keyboard",
+    title: "Full-stack developer based in ATL.",
+    description: `Helping with all your web service needs.`,
     clas: "second-slide"
   },
   {
     src: thirdPic,
-    altText: "Third Slide of Arts and Crafts tools",
-    title: "I make things",
-    description: `
-    Check out my projects below! They're sorted by themes.`,
+    altText: "Third Slide of lightbulb",
+    title: "Projects below: ",
+    description: `They're sorted by themes.`,
     clas: "third-slide"
   }
 ];
