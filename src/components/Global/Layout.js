@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import favicon from "../../../static/img/icons/favicon.ico";
+import favicon from "../../../static/img/js-netflix-red.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.scss";
