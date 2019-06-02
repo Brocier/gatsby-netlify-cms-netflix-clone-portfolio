@@ -1,6 +1,3 @@
-[build]
-  publish = "public"
-  command = "npm run build"
-[build.environment]
-  YARN_VERSION = "1.3.2"
-  YARN_FLAGS = "--no-ignore-optional"
+version https://git-lfs.github.com/spec/v1
+oid sha256:5bc2899197de6843dac326291ea2efe1c741ce6d9e0ca4dc1496de280e831eb2
+size 139

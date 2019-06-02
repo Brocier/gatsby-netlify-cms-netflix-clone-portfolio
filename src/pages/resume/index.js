@@ -1,18 +1,3 @@
-import React from "react";
-import Helmet from "react-helmet";
-
-import Layout from "../../components/Global/Layout";
-import resume from "../../../static/Joshua Schoenfeld Resume.pdf";
-
-const Resume = () => (
-  <Layout>
-    <Helmet title="Resume | Josh's Portfolio" />
-    <div className="container" id="resume">
-      <object width="100%" height="1000px" data={resume}>
-        Resume Object
-      </object>
-    </div>
-  </Layout>
-);
-
-export default Resume;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c000d9bd647bff184b1a3e35d318cecb9eed02867b8dd5e87cf9315899d7a793
+size 457

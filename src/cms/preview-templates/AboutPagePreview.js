@@ -1,17 +1,3 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { AboutPageTemplate } from "../../templates/about-page";
-
-const AboutPagePreview = ({ entry, widgetFor }) => (
-  <AboutPageTemplate
-    title={entry.getIn(["data", "title"])}
-    content={widgetFor("body")}
-  />
-);
-
-AboutPagePreview.propTypes = {
-  entry: PropTypes.shape({ getIn: PropTypes.func }),
-  widgetFor: PropTypes.func
-};
-
-export default AboutPagePreview;
+version https://git-lfs.github.com/spec/v1
+oid sha256:9576f061320dd03116ec8bbc405c0b880d0baac8fe5fc8e99091c757e413bb84
+size 435
