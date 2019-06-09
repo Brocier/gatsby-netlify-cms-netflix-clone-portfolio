@@ -13,5 +13,3 @@ tags:
 ---
 
 This was my second project during WDI.
-
-![Absolute Unit](/img/absolute-unit-1.jpg)

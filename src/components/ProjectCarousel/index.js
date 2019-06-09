@@ -7,9 +7,9 @@ import {
   CarouselCaption
 } from "reactstrap";
 import "./_Carousel.scss";
-import firstPic from "./../../../static/img/laptop-and-code.jpg";
-import secondPic from "./../../../static/img/keyboard.jpg";
-import thirdPic from "./../../../static/img/lightbulb.jpg";
+// import firstPic from "./../../../static/img/laptop-and-code.jpg";
+// import secondPic from "./../../../static/img/keyboard.jpg";
+// import thirdPic from "./../../../static/img/lightbulb.jpg";
 
 const items = [
   {
