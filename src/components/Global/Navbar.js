@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import github from "../../../static/img/github-icon-white.png";
-import myBrand from "../../../static/img/js-netflix-red.png";
+// import github from "../../../static/img/github-icon-white.png";
+// import myBrand from "../../../static/img/js-netflix-red.png";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
 export default class NavigationBar extends Component {
@@ -32,14 +32,14 @@ export default class NavigationBar extends Component {
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">
             <figure className="image m-0">
-              <img
+              {/* <img
                 src={myBrand}
                 alt="JSchoenfeld Logo"
                 style={{
                   width: "44px",
                   maxHeight: "44px"
                 }}
-              />
+              /> */}
             </figure>
           </Link>
         </div>
@@ -52,11 +52,11 @@ export default class NavigationBar extends Component {
             rel="noopener noreferrer"
           >
             <span className="icon">
-              <img
+              {/* <img
                 src={github}
                 alt="Github"
                 style={{ maxHeight: "44px", maxWidth: "44px" }}
-              />
+              /> */}
             </span>
           </Link>
 
