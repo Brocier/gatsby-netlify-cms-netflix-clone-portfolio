@@ -53,6 +53,7 @@
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
     "moment": "^2.22.2",
+    "netlify-cli": "^2.11.22",
     "netlify-cms": "^2.1.1",
     "netlify-cms-backend-bitbucket": "^2.1.0",
     "netlify-cms-lib-auth": "^2.0.5",
