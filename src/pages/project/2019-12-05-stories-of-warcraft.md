@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e1936cc89cd6555a1adb0b081b992dd2868cd95a709990e97b45312ebdf7cf0
-size 338
+---
+templateKey: project-post
+title: Stories of Warcraft v1
+thumbnail: 'https://i.imgur.com/ZMZd5M3.png'
+date: 2018-12-05T15:32:52.890Z
+description: |
+  3rd WDI project
+
+  https://stories-of-warcraft.herokuapp.com/
+tags:
+  - React
+  - Heroku Hosting
+  - Redux
+  - MongoDB
+  - Express
+---
+
+This is body text seperate from the description.

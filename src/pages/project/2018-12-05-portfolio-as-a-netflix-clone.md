@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:269ec72c54f7246ac2c47a0ea1a65dd613aa396dd1cbc460723e69bf65a3e1a7
-size 551
+---
+templateKey: project-post
+title: Portfolio as a Netflix-clone
+thumbnail: >-
+  https://images.unsplash.com/photo-1512070679279-8988d32161be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80
+date: 2018-12-05T15:32:52.890Z
+description: >-
+  I wanted to create a portfolio site that combines my love for React, with the
+  style of Netflix, the premiere Content Provider on the internet.
+tags:
+  - React
+  - Gatsby
+  - Netlify Hosting
+  - Netlify CMS
+  - Redux
+  - Portfolio
+---
+
+This is body text seperate from the description.

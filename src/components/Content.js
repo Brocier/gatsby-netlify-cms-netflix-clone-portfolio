@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c9b3dbda567f9b746cb8c195213495f0c87ac24c2fea97659d611b0d0286f0e4
-size 469
+import React from "react";
+import PropTypes from "prop-types";
+
+export const HTMLContent = ({ content, className }) => (
+  <div
+    className={className}
+    dangerouslySetInnerHTML={{
+      __html: content
+    }}
+  />
+);
+
+const Content = ({ content, className }) => (
+  <div className={className}>{content}</div>
+);
+
+Content.propTypes = {
+  content: PropTypes.node,
+  className: PropTypes.string
+};
+
+HTMLContent.propTypes = Content.propTypes;
+
+export default Content;

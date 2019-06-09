@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff295260aaff4a172e8dcb1a658bd8713e454d26f3c213b3e9d53a4bcb31c7d0
-size 374
+---
+templateKey: project-post
+title: Serotonin Incremental Game
+thumbnail: >-
+  https://images.unsplash.com/photo-1464692805480-a69dfaafdb0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80
+date: 2019-01-26T14:00:24.227Z
+description: My first attempt at designing an Incremental game.
+tags:
+  - React
+---
+
+https://serotonin-incremental.netlify.com/

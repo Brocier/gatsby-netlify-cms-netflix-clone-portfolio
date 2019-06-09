@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9161883644226933ec0d2e48738f3bf86fb7cf45b4e548c20d7520ffb0644223
-size 1589
+import React from "react";
+import Helmet from "react-helmet";
+
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Layout from "../components/Global/Layout";
+import Content, { HTMLContent } from "../components/Content";
+
+export const PetsPageTemplate = ({ title, content, contentComponent }) => {
+  const PageContent = contentComponent || Content;
+
+  return (
+    <section className="section section--gradient">
+      <Helmet title="Pets | Josh's Portfolio" />
+      <div className="container">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="section">
+              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                {title}
+              </h2>
+              <PageContent className="content" content={content} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+PetsPageTemplate.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func
+};
+
+const PetsPage = ({ data }) => {
+  const { markdownRemark: post } = data;
+
+  return (
+    <Layout>
+      <PetsPageTemplate
+        contentComponent={HTMLContent}
+        title={post.frontmatter.title}
+        content={post.html}
+      />
+    </Layout>
+  );
+};
+
+PetsPage.propTypes = {
+  data: PropTypes.object.isRequired
+};
+
+export default PetsPage;
+
+export const PetsPageQuery = graphql`
+  query PetsPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`;

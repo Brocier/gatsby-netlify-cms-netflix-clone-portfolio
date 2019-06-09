@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0f346e7e00b13a4f6f4df3713baf314ff7231ed7d1a41ba41b68e989ba7111b
-size 156
+{
+  "extends": [
+    "config:base"
+  ],
+  "rangeStrategy": "replace",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": "schedule:weekly"
+  }
+}

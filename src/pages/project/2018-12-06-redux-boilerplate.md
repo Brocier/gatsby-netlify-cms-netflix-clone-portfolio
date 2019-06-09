@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c655217e26ac8f90a6643cbcc4d952cb12d5cac96114f08cc92d0ac2d1e5560
-size 474
+---
+templateKey: project-post
+title: Redux Boilerplate
+thumbnail: 'https://cdn-images-1.medium.com/max/1200/0*1p4U99DAhsOHqX-m.jpg'
+date: 2018-02-26T13:53:00.000Z
+description: >-
+  A basic Redux/Thunk Boilerplate to show others how to get full-crud with a
+  Redux front-end.
+tags:
+  - React
+  - Redux
+  - Boilerplate
+---
+https://github.com/Brocier/redux-boilerplate
+
+I adapted this boilerplate from my teacher's instruction to do a lightning talk for my Trade school class.

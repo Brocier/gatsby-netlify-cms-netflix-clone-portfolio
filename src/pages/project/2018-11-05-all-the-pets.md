@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d827aee8a64cb93b42d3eacde8f85496783d09e213406cfb182339c8e9adccb
-size 401
+---
+templateKey: project-post
+title: All the Pets
+thumbnail: >-
+  https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80
+date: 2017-11-05T17:56:00.000Z
+description: Second project
+tags:
+  - Node
+  - MongoDB
+  - Handlebars
+  - Express
+---
+
+This was my second project during WDI.
+
+![Absolute Unit](/img/absolute-unit-1.jpg)

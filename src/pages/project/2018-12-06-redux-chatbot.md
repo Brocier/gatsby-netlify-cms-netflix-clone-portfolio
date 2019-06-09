@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8923bee10a388fa954ca6e6980f78c65ab4aeb7c9477a95aa062c53c6e2d8908
-size 345
+---
+templateKey: project-post
+title: Redux Chatbot
+thumbnail: >-
+  https://images.unsplash.com/photo-1531732960586-947a95bbc438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80
+date: 2018-12-06T13:45:12.012Z
+description: 'https://github.com/Brocier/redux-chatbot-2'
+tags:
+  - Redux
+  - React
+  - Dialogflow
+---
+Body Text

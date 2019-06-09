@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78a9a28d76f250e4a81f7868dee93f6b1d6c255c78461076a5bc76660a79495a
-size 249
+import React from "react";
+import Proptypes from "prop-types";
+
+const ListHeader = ({ header }) => (
+  <div className="list-title">
+    <h3>{header}</h3>
+  </div>
+);
+
+ListHeader.propTypes = {
+  header: Proptypes.string
+};
+export default ListHeader;

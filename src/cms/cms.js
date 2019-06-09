@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d1a1f6fc98fdbb9a3deabb43fb2fde8ba11a843063753d4bdd5650e5a2a25cb
-size 291
+import CMS from "netlify-cms";
+
+import AboutPagePreview from "./preview-templates/AboutPagePreview";
+import ProjectPostPreview from "./preview-templates/ProjectPostPreview";
+
+CMS.registerPreviewTemplate("about", AboutPagePreview);
+CMS.registerPreviewTemplate("project", ProjectPostPreview);

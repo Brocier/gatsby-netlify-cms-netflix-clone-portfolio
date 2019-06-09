@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aaad296ca86f9ff69f52cef002f43b7c8bfe3c81acfaebfa9bfd58a25aaf1348
-size 518
+const React = require("react");
+const gatsby = jest.requireActual("gatsby");
+
+module.exports = {
+  ...gatsby,
+  graphql: jest.fn(),
+  Link: jest.fn().mockImplementation(
+    // these props are invalid for an `a` tag
+    ({
+      activeClassName,
+      activeStyle,
+      getProps,
+      innerRef,
+      partiallyActive,
+      ref,
+      replace,
+      to,
+      ...rest
+    }) =>
+      React.createElement("a", {
+        ...rest,
+        href: to
+      })
+  ),
+  StaticQuery: jest.fn(),
+  useStaticQuery: jest.fn()
+};

@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7f05f123e32c8aa8b1767f328de8809e32ad50f621159b2f032c500694299a9
-size 1788
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+
+  - name: "project"
+    label: "Project"
+    folder: "src/pages/project"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "string", hint: "Use an imgur direct link.", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/pets/index.md"
+        label: "Pets"
+        name: "pets"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "pets-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/about/index.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/resume.js"
+        label: "Resume"
+        name: "resume"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resume"}
+          - {label: "Resume File", name: "resume_file", widget: "file", hint: "Must be titled 'Joshua Schoenfeld Resume.pdf' "}
