@@ -7,13 +7,13 @@ import {
   CarouselCaption
 } from "reactstrap";
 import "./_Carousel.scss";
-// import firstPic from "./../../../static/img/laptop-and-code.jpg";
-// import secondPic from "./../../../static/img/keyboard.jpg";
-// import thirdPic from "./../../../static/img/lightbulb.jpg";
+import firstPic from "./../../../static/img/laptop-and-code.jpg";
+import secondPic from "./../../../static/img/keyboard.jpg";
+import thirdPic from "./../../../static/img/lightbulb.jpg";
 
 const items = [
   {
-    // src: firstPic,
+    src: firstPic,
     altText: "First Slide of laptop and coffee",
     title: `Joshua Schoenfeld`,
     description: `
@@ -21,14 +21,14 @@ const items = [
     clas: "first-slide"
   },
   {
-    // src: secondPic,
+    src: secondPic,
     altText: "Second Slide of a keyboard",
     title: "Full-stack developer based in ATL.",
     description: `Helping with all your web service needs.`,
     clas: "second-slide"
   },
   {
-    // src: thirdPic,
+    src: thirdPic,
     altText: "Third Slide of lightbulb",
     title: "Projects below: ",
     description: `They're sorted by themes.`,
