@@ -12,7 +12,6 @@ module.exports = {
         name: "JSchoenfeld Portfolio",
         short_name: "Portfolio",
         start_url: `/`,
-        icon: `static/img/js-netflix-red.png`,
         theme_color: "#b9090b",
         background_color: "#141414",
         display: "standalone"
