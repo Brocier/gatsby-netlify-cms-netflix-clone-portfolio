@@ -12,3 +12,5 @@ Building web applications has a lot of parallels with fixing physical machines a
 For fun, I play with my 2 dogs, 3 cats, and read fantasy-fiction books.
 
 I am future-focused and a ravenous learner. I lead from any position by relating to my co-workers and taking full responsibility for my projects.
+
+![Test Image.](/img/General-Assembly-perspective.jpg)
