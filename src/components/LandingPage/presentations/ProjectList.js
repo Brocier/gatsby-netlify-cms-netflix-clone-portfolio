@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Proptypes from "prop-types";
 import { findDOMNode } from "react-dom";
 import $ from "jquery";
-import ProjectListItem from "./ProjectListItem";
-import "./../HomeList.scss";
+import ListItem from "./ListItem";
+import "./ProjectList.scss";
 
 export default class ProjectList extends Component {
   state = {
@@ -12,7 +12,7 @@ export default class ProjectList extends Component {
 
   renderProjectList = projectList =>
     projectList.map(({ node: project }) => (
-      <ProjectListItem key={project.id} project={project} />
+      <ListItem key={project.id} project={project} />
     ));
 
   handleLeftClick = e => {
