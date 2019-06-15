@@ -6,12 +6,6 @@ thumbnail: >-
 date: 2017-11-05T17:56:00.000Z
 description: Second project
 tags:
-  - Node
-  - MongoDB
-  - Handlebars
-  - Express
+  - General-Assembly-Project
 ---
-
 This was my second project during WDI.
-
-![Absolute Unit](/img/absolute-unit-1.jpg)
