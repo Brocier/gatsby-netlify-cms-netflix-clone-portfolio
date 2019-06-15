@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Proptypes from "prop-types";
 import { Link } from "gatsby";
 
-export default class ListItem extends Component {
+export default class ProjectListItem extends Component {
   constructor(props) {
     super(props);
     this.renderTitle = this.renderTitle.bind(this);
@@ -29,28 +29,19 @@ export default class ListItem extends Component {
     return <p className="tile-desc">{desc}</p>;
   };
 
-  renderPic = movie => {
-    if (movie.backdrop_path !== null) {
+  renderPic = pictureLink => {
+    if (pictureLink !== null) {
       return (
         <img
           className="tile-img"
-          alt="img"
-          src={`https://image.tmdb.org/t/p/w500//${movie.backdrop_path}`}
-        />
-      );
-    }
-    if (movie.poster_path !== null) {
-      return (
-        <img
-          className="tile-img "
-          alt="img"
-          src={`https://image.tmdb.org/t/p/w500//${movie.poster_path}`}
+          alt={pictureLink + " Thumbnail"}
+          src={`${pictureLink}`}
         />
       );
     }
     return (
       <img
-        alt="img"
+        alt="Placeholder Thumbnail"
         className="tile-img"
         src="https://via.placeholder.com/280x160"
       />
@@ -58,17 +49,19 @@ export default class ListItem extends Component {
   };
 
   render() {
-    const { movie } = this.props;
+    const { project } = this.props;
     return (
-      <Link className="tile" to={`based-on`}>
-        <div className="tile-img">{this.renderPic(movie)}</div>
+      <Link className="tile" to={`${project.fields.slug}`}>
+        <div className="tile-img">
+          {this.renderPic(project.frontmatter.thumbnail)}
+        </div>
         <div className=" photo-overlay">
           <div className="tile-text-container">
             <div className="playbtn-container">
               <button className="playBtn ">▶</button>
             </div>
-            <>{this.renderTitle(movie.title)}</>
-            <>{this.renderDesc(movie.overview)}</>
+            {this.renderTitle(project.frontmatter.title)}
+            {this.renderDesc(project.excerpt)}
           </div>
         </div>
       </Link>
@@ -76,6 +69,6 @@ export default class ListItem extends Component {
   }
 }
 
-ListItem.propTypes = {
-  movie: Proptypes.object
+ProjectListItem.propTypes = {
+  project: Proptypes.object
 };
