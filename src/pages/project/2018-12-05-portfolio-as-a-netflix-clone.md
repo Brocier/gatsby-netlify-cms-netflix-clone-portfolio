@@ -8,12 +8,7 @@ description: >-
   I wanted to create a portfolio site that combines my love for React, with the
   style of Netflix, the premiere Content Provider on the internet.
 tags:
-  - React
-  - Gatsby
-  - Netlify Hosting
-  - Netlify CMS
-  - Redux
-  - Portfolio
+  - React & Redux
 ---
 
 This is body text seperate from the description.

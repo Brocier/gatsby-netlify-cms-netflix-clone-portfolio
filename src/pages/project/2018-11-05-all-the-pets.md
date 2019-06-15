@@ -6,6 +6,7 @@ thumbnail: >-
 date: 2017-11-05T17:56:00.000Z
 description: Second project
 tags:
-  - General-Assembly-Project
+  - General Assembly Project
 ---
+
 This was my second project during WDI.

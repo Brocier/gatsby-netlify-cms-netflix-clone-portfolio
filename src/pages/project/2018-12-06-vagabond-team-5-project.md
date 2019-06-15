@@ -6,12 +6,11 @@ thumbnail: >-
 date: 2018-02-12T14:00:00.000Z
 description: Group project at General Assembly to make a basic travel website as a team.
 tags:
-  - Rails
-  - React
-  - Redux
-  - Teamwork
-  - Coaching
+  - React & Redux
+  - General Assembly Project
+  - Ruby
 ---
+
 https://github.com/Brocier/Team_5_Project
 
 Worked with https://github.com/Moodyc21

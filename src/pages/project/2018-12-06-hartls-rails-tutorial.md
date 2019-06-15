@@ -6,11 +6,9 @@ thumbnail: >-
 date: 2018-02-25T13:56:00.000Z
 description: Hartl's rails tutorial completed during my time at General Assembly.
 tags:
-  - Rails
-  - Scaffolding
-  - Handlebars
-  - Testing
+  - Ruby
 ---
+
 https://github.com/Brocier/hartl-rails-tutorial
 
 https://www.railstutorial.org/

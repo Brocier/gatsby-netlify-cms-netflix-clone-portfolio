@@ -6,7 +6,7 @@ thumbnail: >-
 date: 2019-01-26T14:00:24.227Z
 description: My first attempt at designing an Incremental game.
 tags:
-  - React
+  - React & Redux
 ---
 
 https://serotonin-incremental.netlify.com/
