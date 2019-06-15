@@ -45,7 +45,7 @@ export default class NavigationBar extends Component {
         </div>
 
         <div className="d-flex flex-md-grow-1 flex-md-row-reverse justify-content-between">
-          <Link
+          <a
             className="nav-link navbar-item d-md-block d-none  "
             href="https://github.com/Brocier/"
             target="_blank"
@@ -58,7 +58,7 @@ export default class NavigationBar extends Component {
                 style={{ maxHeight: "44px", maxWidth: "44px" }}
               />
             </span>
-          </Link>
+          </a>
 
           <Collapse isOpen={this.state.isOpen} navbar className="fadeInRight">
             <Nav navbar>

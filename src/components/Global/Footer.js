@@ -13,12 +13,12 @@ const Footer = () => (
       <p className="p-0 m-0 text-muted lead" href="#">
         &copy;2018. All Rights Reserved by JSchoenfeld.
       </p>
-      <Link
+      <a
         className="p-0 m-0 navbar-brand text-muted"
         href="https://github.com/Brocier/JSchoenfeld-Portfolio"
       >
         github
-      </Link>
+      </a>
     </nav>
   </footer>
 );
