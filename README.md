@@ -1,56 +1,12 @@
 # Welcome to my Portfolio's github page!
 
-Based On:
+## The goal of this project
 
-[Yuchiu's NetflixClone](https://github.com/yuchiu/netflix-clone)
-
-[The Gatsby + Netlify CMS Starter]("https://github.com/netlify-templates/gatsby-starter-netlify-cms")
-
-## TODO: Write out more of an introduction for this idea.
+Create an intelligent display of my github projects that would update automatically alongside my public repositories on github.com
+Get experience working with a CMS other than wordpress and contentful
+Use Netlify's full service deployment platform to gain experience away from Heroku.
 
 # Next Steps:
 
-- Switch out to getting repo data from Github.
-- Use Netlify CMS to build out a blog that displays within the list of repos.
-- Move wholly into Graphql from Redux.
-
-Figured out how to get the data I want from github.com/api v4 graphql
-
-Now I need to figure out how to convert that data into Netlify-CMS approved markdown file format.
-
-After that it will be key to have the actual github data change when it is edited in the corresponding CMS markdown files.
-
-```graphql
-{
-  viewer {
-    name
-    repositories(
-      privacy: PUBLIC
-      orderBy: { field: CREATED_AT, direction: DESC }
-      first: 100
-      isFork: false
-    ) {
-      totalCount
-      edges {
-        node {
-          id
-          createdAt
-          name
-          url
-          homepageUrl
-          description
-          repositoryTopics(first: 100) {
-            edges {
-              node {
-                topic {
-                  name
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-```
+- Switch out to getting a user's repo data from Github's v4 API.
+- Use Netlify CMS to build out a blog platform that displays alongside the list of repos.
