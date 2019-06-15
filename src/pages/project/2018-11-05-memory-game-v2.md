@@ -6,10 +6,8 @@ thumbnail: >-
 date: 2018-11-05T13:51:02.896Z
 description: Where almost everything I learned at General Assembly came together.
 tags:
-  - React
-  - Rails
-  - Redux
-  - PSQL
+  - General-Assembly-Project
+  - React-Redux
 ---
 
 My final project at General Assembly's Web Development Immersive course.
